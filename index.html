@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Analytics</h2>
+    <ul>
+      <li>📊 Overview</li>
+      <li>📝 Commits</li>
+      <li>🐛 Issues</li>
+      <li>🔀 Pull Requests</li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <header>
+      <h1>Code Analytics Dashboard</h1>
+      <button id="refresh">Refresh</button>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Total Commits</h3>
+        <p id="commits-count">1,245</p>
+      </div>
+      <div class="card">
+        <h3>Open Issues</h3>
+        <p id="issues-count">87</p>
+      </div>
+      <div class="card">
+        <h3>Pull Requests</h3>
+        <p id="prs-count">34</p>
+      </div>
+    </section>
+
+    <section class="chart">
+      <canvas id="analyticsChart"></canvas>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
